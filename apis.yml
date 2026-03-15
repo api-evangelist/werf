@@ -1,0 +1,15 @@
+name: werf
+description: A CLI tool that implements the full application lifecycle (build, deploy,
+  cleanup) using Git as a single source of truth, with built-in support for Helm and
+  integration with CI/CD systems.
+url: https://werf.io/
+tags:
+- DevOps
+- CI/CD
+- Kubernetes
+- Deployment
+- GitOps
+created: '2025'
+modified: '2025'
+apis: []
+common: []
