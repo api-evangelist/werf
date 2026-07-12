@@ -24,6 +24,8 @@ modified: '2026-05-03'
 specificationVersion: '0.19'
 apis: []
 common:
+  - type: DomainSecurity
+    url: security/werf-domain-security.yml
   - type: Website
     url: https://werf.io/
   - type: Documentation
