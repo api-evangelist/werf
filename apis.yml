@@ -42,7 +42,7 @@ tags:
   - CNCF
   - Helm
   - Containers
-  - Open-Source
+  - Open Source
 tags_raw:
   - CI/CD
   - Deployment
@@ -53,6 +53,7 @@ tags_raw:
   - Helm
   - Containers
   - Open Source
+  - Open-Source
 created: '2025'
 modified: '2026-05-03'
 specificationVersion: '0.23'
