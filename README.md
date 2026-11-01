@@ -1,4 +1,4 @@
-# Werf (werf)
+# Werf
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,71 +66,82 @@
 
 Werf is an open-source CNCF sandbox project providing a complete GitOps-based CI/CD solution for Kubernetes. It implements the full application delivery lifecycle — building images, managing dependencies, deploying Helm charts, and cleaning up container registries — using Git as the single source of truth (Giterminism). Werf integrates natively with all major CI systems, Buildah, Helm, and Kubernetes.
 
-**URL:** [https://werf.io/](https://werf.io/)
+**Areas:** CI/CD · Deployment · DevOps · GitOps · Kubernetes · CNCF · Helm · Containers · Open Source
 
-**Run:** [Capabilities Using Naftiko](https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=company-api-evangelist&utm_content=repo)
+## Werf on APIs.io
 
-## Tags:
+Everything profiled for Werf is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/werf/](https://apis.io/providers/werf/)** — or go straight to one of the APIs or properties below.
 
- - CI/CD, Deployment, DevOps, GitOps, Kubernetes, CNCF, Helm, Containers, Open Source
+### Published properties
 
-## Timestamps
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-- **Created:** 2025
-- **Modified:** 2026-05-03
+#### Security (1)
 
-## Common Properties
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Werf Domain Security](https://apis.io/security/werf/werf-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://werf.io/)
 - [Documentation](https://werf.io/docs/v2/)
-- [Getting Started](https://werf.io/getting_started/)
-- [GitHub Organization](https://github.com/werf)
-- [GitHub Repository - werf](https://github.com/werf/werf)
-- [CLI - Werf CLI](https://github.com/werf/werf)
-- [GitHub Repository - Nelm](https://github.com/werf/nelm)
-- [GitHub Repository - Kubedog](https://github.com/werf/kubedog)
-- [GitHub Repository - TRDL](https://github.com/werf/trdl)
-- [GitHub Repository - GitHub Actions](https://github.com/werf/actions)
-- [GitHub Repository - Nelm Chart TypeScript SDK](https://github.com/werf/nelm-chart-ts-sdk)
-- [Change Log](https://github.com/werf/werf/releases)
+- [Getting started](https://werf.io/getting_started/)
 - [Support](https://github.com/werf/werf/discussions)
+- [Changelog](https://github.com/werf/werf/releases)
+- [GitHub](https://github.com/werf)
 
-## Features
+## API Evangelist rating
 
-| Name | Description |
-|------|-------------|
-| Giterminism | Uses Git as the single source of truth, ensuring all CI/CD configurations are reproducible and auditable from version control. |
-| Incremental Builds | Rebuilds only modified components and reuses existing container registry layers, dramatically reducing build times. |
-| Kubernetes Deployment | Manages Helm chart deployments to Kubernetes with built-in rollback, planning, and drift detection (werf converge, werf plan, werf rollback). |
-| Container Registry Cleanup | Automatically cleans up stale images from container registries using Git history-aware policies (werf cleanup, werf purge). |
-| Helm Integration | Full Helm chart management including rendering, linting, bundling, and deploying with werf helm command suite. |
-| Multi-CI Support | Native integration with GitHub Actions, GitLab CI, CircleCI, Jenkins, and other CI systems via werf ci-env. |
-| Secure Software Delivery | TRDL component provides TUF-based secure software update distribution with GPG signature verification. |
+**Kin Score 23.0** — emerging · rubric 0.24.0 · scored 2026-10-17
 
-## Use Cases
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 28.9 |
+| Developer ergonomics | 33.3 |
+| Access clarity | 0.0 |
 
-| Name | Description |
-|------|-------------|
-| Kubernetes Application Delivery | Build, test, and deploy containerized applications to Kubernetes clusters using GitOps principles. |
-| Monorepo CI/CD | Manage CI/CD pipelines for monorepo projects with independent image tagging and selective component redeployment. |
-| Helm Chart Management | Package, bundle, and deploy Helm charts with integrated dependency management and Kubernetes compatibility checks. |
-| Container Registry Management | Automate container image lifecycle from build to cleanup using content-based tagging and Git-aware retention policies. |
-| Secure Software Distribution | Distribute software updates securely using TUF framework with TRDL, ensuring integrity and authenticity of delivered artifacts. |
+**Agent readiness 0.0** — human-only
 
-## Integrations
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
 
-| Name | Description |
-|------|-------------|
-| GitHub Actions | Native GitHub Actions for incorporating werf into GitHub-hosted CI/CD pipelines. |
-| GitLab CI | First-class support for GitLab CI/CD environment variables and pipeline integration. |
-| Helm | Deep integration with Helm package manager for Kubernetes, extending it with werf-specific deployment guarantees. |
-| Buildah | Uses Buildah for rootless, daemonless OCI image builds without requiring Docker. |
-| Kubernetes | Direct integration with Kubernetes API for deploying, monitoring, and managing application resources. |
-| OCI Registries | Compatible with all OCI-compliant container registries including Docker Hub, GHCR, GitLab Registry, and cloud registries. |
-| CNCF Ecosystem | CNCF Sandbox project integrating with the broader cloud-native ecosystem including Flux CD and other CNCF tools. |
+**Regulatory alignment 5.9** — Horizontal (data, software, accessibility, platform)
 
-## Maintainers
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/werf/](https://apis.io/providers/werf/).
 
-**FN:** Kin Lane
+## How this profile is made
 
-**Email:** kin@apievangelist.com
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Werf: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/werf/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
